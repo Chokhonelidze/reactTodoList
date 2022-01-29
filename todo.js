@@ -4,6 +4,6 @@ function Todo({todo, index, remove}) {
   }
   return (
   <div className="todo" key={index} >
-   <p>{todo.text}</p> <button onClick={handle}>🦠</button>
+   <p>{todo.text}</p> <button onClick={handle}>	&#129440;</button>
   </div>);
 }
