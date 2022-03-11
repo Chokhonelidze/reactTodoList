@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <title>ToDo</title>
+    <link rel="stylesheet" href="mycss.css">
     <link rel="stylesheet" href="style.css">
+    
+    <script src="../main/nav.js"></script>
     <!-- don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-
+    <div class='header'>
+    </div>
+    <div class='about'>
+      <a href='https://github.com/Chokhonelidze/reactTodoList'  target="_blank">
+          <img src='https://www.logo.wine/a/logo/GitHub/GitHub-Logo.wine.svg'  />    
+      </a>
+  </div>
+  <div class='main'>
     <!-- we will put our teact component inside this div -->
     <div id="root"></div>
-
+  </div>
     <!-- load react -->
     <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
@@ -20,8 +30,11 @@
     <script src="todo.js" defer type="text/babel"></script>
     <script src="form.js" defer type="text/babel"></script>
     <script src="index.js" defer type="text/babel"></script>
-   
-
-
-  </body>
+    <script>
+      let elem = document.getElementsByClassName('header')[0];
+      buildNav(elem,"PacMen Arena");
+    </script>
+ 
+</body>
+  
 </html>
